@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license       = "AT&T: Software Development Kit Tools Agreement"
   spec.has_rdoc      = true
 
-  spec.files         = Dir['lib/**/*', 'examples/**/*']
+  spec.files         = Dir['lib/**/*', 'examples/**/*',"bin/**/*"]
   spec.files         += Dir['*.gemspec', 'Gemfile', 'Rakefile', 'README.md']
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
